@@ -18,7 +18,9 @@ namespace ComputerRepairTrackingSystem_Entites.Entities
 
         public string PersonPhone { get; set; }
 
-        public int BrandId { get; set; }
+        public string Brand { get; set; }
+
+        public string Price { get; set; }
 
         public string Problem { get; set; }
 
@@ -27,8 +29,7 @@ namespace ComputerRepairTrackingSystem_Entites.Entities
         public bool IsDelete { get; set; }
         public string RecordOfDateTime { get; set; } 
 
-        [ForeignKey("BrandId")]
-        public virtual Brand Brand { get; set; }
+        
 
     
 

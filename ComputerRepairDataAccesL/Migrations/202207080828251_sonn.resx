@@ -117,7 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="Target" xml:space="preserve">
+    <value>H4sIAAAAAAAEAM1Yy27bOBTdDzD/IGg1A6RWHpuZQG6R2MkgmDg2IrfbgpaubaIUqSGpwP62LuaT5hfmUm9RdmrZTVFkEZm699wHqXOP9N/Xf/0Pm5g5LyAVFXzoXgzOXQd4KCLKV0M31ct3f7gf3v/6i38XxRvnU2l3ZezQk6uhu9Y6ufY8Fa4hJmoQ01AKJZZ6EIrYI5HwLs/P//QuLjxACBexHMd/TrmmMWQ/8OdI8BASnRI2EREwVazjnSBDdZ5IDCohIQzdkYiTVIN8hoRQOSaa3IQhqEfXuWGUYD4BsKXrEM6FJhqzvf6oINBS8FWQ4AJh820CaLckTEFRxXVtfmhB55emIK92LKHCVGkR9wS8uCo65NnuR/XZrTqIPbzDXuutqTrro91C17FDXo+YNOa25VyS8AsejGCrNMSfM1xQg+w/xYu29ZlziPdZdajw7Jk/dEuZTiUMOaRaEnbmzNIFo+HfsJ2LL8CHPGWsWSCWiPdaC7g0kyIBqbfPsCzKfohcx2v7ebZj5dbwyVvxwPXVpes8YXCyYFCdn0bbAi0k/AUcJNEQzYjG2rnBgGwHOtGtWDNshODmuoyJxxYb5joTsnkEvtLroYuXrnNPNxCVK0UeHznFxxadtEzhsFCzteBvH+tWEh69fUWShj+gb1Lg3sdvHid/YqBq260QDAjfcfxex3lQY2Cg4VScZwiFjKZLpFuY0+9+QH2v5qguc+F00ITiU9VqjlmFzQ7yQrov+EsVsdql5aAB6J1sODddcZ06n3ygDGzO3JV+lWg9v7x8gJWDztsz6fwJSRLsZGPyFStOUIy9d0H/SRDnGF6odgyEKtsqEtIXWYF11zQognsqlTbDdkHMXo6iuGPW2pY9LS9D7e+8TeP1RpS+5nqXfy0F7M2yMOvm3mO9MZJzVjpUWXYmZAcgUyaEEbljXIwES2O+b+S85t0cAE2U5npftILju3DFjcPxCh5vIhVLPXLKWbqVTb7UB6Pg4DZKsXg4Ts2xTaB69XCkmmVbe1+t9snJ5tl2bvbdLrLvWWfbfqC8zhNlSSL7YX2N6GyTKnpFeBax+QXJHKLzLdbJTVwHW/ZCI8M4uZIcGINB8A8bMYr11gYTwukSlM5Vo4si+9J6Sfh5BLunVMR6qfYfLoCp6e03JW5PYdHVvPyFyHBN5G8x2fzexDtS156E19Kup2XW1KcnIrU06ElYts5cUH2yxjwGY5++7FFcPw3Z1TR9ROIB+jBnq6EbLQQWkyfdtlFHi8guh/pe84uKPwZFVzWE+b7CITTkVIOWNg98KcrdwHqbGZUm1mZNQJPIiC2p6ZKEGm+j6lLZi8AnwlI0uYsXED3waaqx4BulIF6w1vuv770eP1PK7Zz9aWJ+qe9RAqZJsQSY8tuUsqjK+757WPdBmBNUECFmhS9CCLfaVkhPHXW1D6ho3xgS4IZG5xAnDMHUlAfkBY7JDV+BHmFFwm05CveDfHsj2m33x5SsJIlVgVH7m6+EnvlM+P5/WzQylVgUAAA=</value>
+  </data>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
+  </data>
 </root>

@@ -67,6 +67,14 @@
     <Compile Include="Migrations\202207061538057_enable.designer.cs">
       <DependentUpon>202207061538057_enable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202207072108399_son.cs" />
+    <Compile Include="Migrations\202207072108399_son.designer.cs">
+      <DependentUpon>202207072108399_son.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207080828251_sonn.cs" />
+    <Compile Include="Migrations\202207080828251_sonn.designer.cs">
+      <DependentUpon>202207080828251_sonn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepairContex.cs" />
@@ -93,6 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202207061538057_enable.resx">
       <DependentUpon>202207061538057_enable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207072108399_son.resx">
+      <DependentUpon>202207072108399_son.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207080828251_sonn.resx">
+      <DependentUpon>202207080828251_sonn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

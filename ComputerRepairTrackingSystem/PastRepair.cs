@@ -22,10 +22,10 @@ namespace ComputerRepairTrackingSystem
         {
             ComputerRepairMenager menager = new ComputerRepairMenager();
             dataGridView1.DataSource= menager.GetAllPastRepair();
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Columns[0].Visible = false;
-            dataGridView1.Columns[3].Visible = false;
-            dataGridView1.Columns[5].Visible = false;
             dataGridView1.Columns[6].Visible = false;
+            dataGridView1.Columns[7].Visible = false;
         }
     }
 }

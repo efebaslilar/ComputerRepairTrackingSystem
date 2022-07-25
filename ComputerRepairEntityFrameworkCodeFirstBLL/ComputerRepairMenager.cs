@@ -86,5 +86,18 @@ namespace ComputerRepairEntityFrameworkCodeFirstBLL
                 throw;
             }
         }
+
+        public ComputerRepair GetDatabyid(int id)
+        {
+            ComputerRepair data =(ComputerRepair)repairContex.ComputerRepairTable.Where(x => x.Id == id);
+            return data;
+        }
+
+        public void UpdateDatabyId(ComputerRepair repair, int id)
+        {
+            ComputerRepair a = repairContex.ComputerRepairTable.FirstOrDefault(x => x.Id == id);
+            a = repair;
+            repairContex.SaveChanges();
+        }
     }
 }

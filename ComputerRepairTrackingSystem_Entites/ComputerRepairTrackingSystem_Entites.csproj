@@ -51,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Brand.cs" />
     <Compile Include="Entities\ComputerRepair.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

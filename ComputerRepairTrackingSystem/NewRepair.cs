@@ -18,14 +18,8 @@ namespace ComputerRepairTrackingSystem
         {
             InitializeComponent();
         }
-        BrandManager brandManager = new BrandManager();
+        
         ComputerRepairMenager computerRepairMenager = new ComputerRepairMenager();
-
-      private void NewRepair_Load(object sender, EventArgs e)
-        {
-            GetBrandIdAndNameToCombo();
-            
-        }
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -34,9 +28,10 @@ namespace ComputerRepairTrackingSystem
                 {
                     PersonName = txtboxNameAddPerson.Text,
                     PersonPhone = txtboxPhoneAddPerson.Text,
-                    BrandId = Convert.ToInt32(comboBox1.SelectedValue),
+                    Price = txtPriceAddPerson.Text,
+                    Brand = txtBrandAddPerson.Text,
                     Problem = richTextBox2.Text,
-                    RecordOfDateTime = DateTime.Now.ToString("dd-MM-yyyy")
+                    RecordOfDateTime = DateTime.Now.ToString("hh-mm dd-MM-yyyy")
                 };
                 computerRepairMenager.AddRepair(a);
                 MessageBox.Show("Başarıyla Kaydedildi");
@@ -46,21 +41,15 @@ namespace ComputerRepairTrackingSystem
             catch (Exception)
             {
 
-                throw;
+                MessageBox.Show("Beklenmeyen Bir hata oluştu.");;
             }
             
         }
 
-        public void GetBrandIdAndNameToCombo()
-        {
-            
-            comboBox1.DisplayMember = "Name";
-            comboBox1.ValueMember="Id";
-            comboBox1.DataSource = brandManager.GetAllBrands();
-        }
+      
 
         public void ClearAll()
-        {
+        {   
             foreach (var item in this.Controls)
             {
                 if (item is TextBox )
@@ -72,8 +61,6 @@ namespace ComputerRepairTrackingSystem
                     ((RichTextBox)item).Clear();
                 }
             }
-            comboBox1.SelectedIndex = 0;
-            
         }
 
       

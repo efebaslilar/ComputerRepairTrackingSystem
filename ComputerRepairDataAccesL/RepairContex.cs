@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace ComputerRepairDataAccesL
 {
-    public class RepairContex :DbContext
+    public class RepairContex : DbContext
     {
         //constructor yazdık base e connection string cümlesinin olduğu parametre adını verdik.
-        public RepairContex():base("name=MyCon")
-        {}
+        public RepairContex() : base("name=MyCon")
+        { }
 
-        public virtual DbSet<Brand> BrandTable { get; set; } //adonet datatable 
+
         public virtual DbSet<ComputerRepair> ComputerRepairTable { get; set; }
     }
 }

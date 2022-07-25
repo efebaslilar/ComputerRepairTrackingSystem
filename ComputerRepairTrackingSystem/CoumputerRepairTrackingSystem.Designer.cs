@@ -83,7 +83,7 @@ namespace ComputerRepairTrackingSystem
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "CoumputerRepairTrackingSystem";
-            this.Text = "Form1";
+            this.Text = "Computer Repair";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CoumputerRepairTrackingSystem_FormClosing);
             this.ResumeLayout(false);
 

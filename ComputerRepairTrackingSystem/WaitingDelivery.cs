@@ -22,44 +22,68 @@ namespace ComputerRepairTrackingSystem
         private ComputerRepairMenager repairMenager = new ComputerRepairMenager();
         private void Waiting_Delivery_Load(object sender, EventArgs e)
         {
-
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.DataSource=repairMenager.GetAllRepair();
-            dataGridView1.Columns[0].Visible = false;
-            dataGridView1.Columns[3].Visible = false;
-            dataGridView1.Columns[5].Visible = false;
-            dataGridView1.Columns[6].Visible = false;
-
+            GetDataGridRepairData();
         }
 
         private void btnTamirEdildi_Click(object sender, EventArgs e)
         {
             try
             {
-                int a = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value);
-                repairMenager.Repaired(a);
+                int a= Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value);
+                 repairMenager.Repaired(a);
                 MessageBox.Show("Başarıyla Tamir Edildi.");
-            }
-            catch (Exception hata )
-            {
-
-                MessageBox.Show("Beklenmeyen Bir Hata Oluştu!"+ hata.Message);
-            }
-        }
-
-        private void btnTamiratSil_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                int a = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value);
-                repairMenager.IsDelete(a);
-                MessageBox.Show("Başarıyla Silindi.");
+                GetDataGridRepairData();
             }
             catch (Exception hata)
             {
-                MessageBox.Show("Beklenmedik Bir Hata oluştu" + hata.Message);
+
+                MessageBox.Show("Beklenmeyen Bir Hata Oluştu!" + hata.Message);
             }
         }
+
+        private void SilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value);
+                    repairMenager.IsDelete(id);
+                    MessageBox.Show("Başarıyla Silinmiştir !");
+                GetDataGridRepairData();
+            }
+            catch (Exception hata)
+            {
+                MessageBox.Show("Beklenmeyen Bir Hata Oldu!"+hata.Message);
+            }
+        }
+
+        public void GetDataGridRepairData()
+        {
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = repairMenager.GetAllRepair();
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[6].Visible = false;
+            dataGridView1.Columns[7].Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow item in dataGridView1.Rows)
+            {
+                ComputerRepair dataRepair = new ComputerRepair()
+                {
+                    PersonName= (string)dataGridView1.Rows[0].Cells["PersonName"].Value,
+                    Brand = (string)dataGridView1.Rows[0].Cells["Brand"].Value,
+                    PersonPhone = (string)dataGridView1.Rows[0].Cells["PersonName"].Value,
+                    Price = (string)dataGridView1.Rows[0].Cells["PersonName"].Value,
+                    Problem = (string)dataGridView1.Rows[0].Cells["PersonName"].Value,
+                };
+                repairMenager.UpdateDatabyId(dataRepair, Convert.ToInt32(dataGridView1.Rows[0].Cells["Id"].Value));
+            }
+            MessageBox.Show("Bilgiler Güncellenmiştir.");
+            GetDataGridRepairData();
+        }
+
     }
 }
 
